@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs | Hot Beans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="Index.html">HotBeans</a>
+
+  
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.Html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Jobs.html">Jobs</a></li>
+          <li class="nav-item"><a class="nav-link" href="Apply.html">Apply Now</a></li>
+          <li class="nav-item"><a class="nav-link" href="Team.Html">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="Courses.html">Courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+      <h2>Join Our Development Team</h2>
+      <p>Explore exciting career opportunities at Hot Beans Web.</p>
+    </div>
+  </section>
+  
+  <!-- FILTER -->
+  <section class="filter-section">
+    <div class="container filter-box">
+      <input type="text" id="searchInput" placeholder="Search jobs..." />
+      <select id="categoryFilter">
+        <option value="all">All Roles</option>
+        <option value="frontend">Front-End</option>
+        <option value="backend">Back-End</option>
+        <option value="design">Design</option>
+      </select>
+    </div>
+  </section>
+  
+  <!-- JOBS SECTION -->
+  <section class="courses-section">
+    <div class="container">
+      <h3>Available Positions</h3>
+  
+      <div class="courses-grid" id="coursesGrid">
+  
+        <div class="course-card" data-category="design">
+          <h4>Junior Web Designer</h4>
+          <p class="level">Entry Level</p>
+          <p>
+            Assist in designing modern, user-friendly websites and improving UI/UX layouts.
+          </p>
+          <button><a style="color: white;" href="https://www.totaljobs.com/jobs/junior-web-designer?cid=SEA_BG_UK-TJ-FEED---D%7C%5BA%5D_c_it--%7CDIS2--_JD+it_RL_DSA-&loc_interest=&loc_physical=41471&s_kwcid=AL%217101%2110%2176691145018830%21%21%21%212328490750826724%21%21662921346%211227056121587330&ef_id=2dbf225094fd1f28b16448514c2b0df0%3AG%3As%E2%80%8B&adjust_t=1j9h397y_1jw75f25&msclkid=2dbf225094fd1f28b16448514c2b0df0">Apply Now</a></button>
+        </div>
+      
+        <div class="course-card" data-category="frontend">
+          <h4>Frontend Developer</h4>
+          <p class="level">Junior to Mid-Level</p>
+          <p>
+            Build responsive and interactive user interfaces using HTML, CSS, and JavaScript.
+          </p>
+          <button><a style="color: white;" href="https://www.it-jobs.co.uk/it-jobs?s=103326&utm_source=bing&utm_medium=cpc&utm_campaign={CampaignName}&utm_content={AdGroupName}&utm_ad=&utm_term=front%20end%20developer%20jobs&cq_plac=&cq_net=o&cq_pos=&msclkid=75bc9af1fea310b1fbb1f0f0277a5e95">Apply Now</a></button>
+        </div>
+      
+        <div class="course-card" data-category="backend">
+          <h4>Backend Developer</h4>
+          <p class="level">Mid-Level</p>
+          <p>
+            Develop server-side applications, manage databases, and build APIs.
+          </p>
+          <button><a style="color: white;" href="https://uk.indeed.com/q-backend-developer-l-london-jobs.html?vjk=8a13dd3e43fee754">Apply Now</a></button>
+        </div>
+  
+        <div class="course-card" data-category="frontend">
+          <h4>Junior Frontend Developer</h4>
+          <p class="level">Entry Level</p>
+          <p>
+            Support development of website features and maintain front-end performance.
+          </p>
+          <button><a style="color: white;" href="https://www.cwjobs.co.uk/jobs/junior-front-end-developer">Apply Now</a></button>
+        </div>
+  
+        <div class="course-card" data-category="backend">
+          <h4>PHP Backend Developer</h4>
+          <p class="level">Intermediate</p>
+          <p>
+            Work with PHP and MySQL to build dynamic web applications.
+          </p>
+          <button><a style="color: white;" href="https://www.totaljobs.com/jobs/php-backend-developer">Apply Now</a></button>
+        </div>
+  
+        <div class="course-card" data-category="design">
+          <h4>UI/UX Designer</h4>
+          <p class="level">Junior to Intermediate</p>
+          <p>
+            Design engaging user experiences and improve website usability.
+          </p>
+          <button><a style="color: white;" href="https://www.cwjobs.co.uk/jobs/ui-ux-designer/in-london">Apply Now</a></button>
+        </div>
+  
+      </div>
+  
+      <p id="noResults" class="no-results">No jobs found.</p>
+    </div>
+  </section>
+  
+  <!-- CTA -->
+  <section class="cta">
+    <h3>Start Your Career with Hot Beans Web</h3>
+    <a href="Apply.html" class="cta-btn">Apply Now</a>
+  </section>
+
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div>
+      <h4>Hot Beans</h4>
+      <p>Connecting talented developers with exciting opportunities</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="Index.html" style="color: white;">Home</a></p>
+      <p><a href="Jobs.html" style="color: white;">Jobs</a></p>
+      <p><a href="About.Html" style="color: white;">About</a></p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>Email: info@hotbeans.com</p>
+      <p>Phone: +44 123 456 789</p>
+    </div>
+
+  </div>
+</footer>
+
+  <style>
+
+    /* Navbar background */
+    .navbar-custom {
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      padding: 12px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    
+    /* Brand (logo text) */
+    .navbar-brand {
+      font-weight: 600;
+      font-size: 1.4rem;
+      letter-spacing: 0.5px;
+    }
+    
+    /* Nav links */
+    .nav-link {
+      color: #e0e6f0 !important;
+      margin-left: 10px;
+      position: relative;
+      transition: 0.3s ease;
+    }
+    
+    /* Hover lift */
+    .nav-link:hover {
+      color: #ffffff !important;
+      transform: translateY(-2px);
+    }
+    
+    /* Animated underline */
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 2px;
+      width: 0%;
+      height: 2px;
+      background: white;
+      transition: 0.3s ease;
+    }
+    
+    /* Hover + active underline */
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+    
+    /* Active link */
+    .nav-link.active {
+      color: #ffffff !important;
+      font-weight: 500;
+    }
+    
+    /* Mobile toggle button fix */
+    .navbar-toggler {
+      border: none;
+    }
+    
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+    
+      /* RESET */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      /* BODY */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f9;
+        color: #333;
+      }
+      
+      /* CONTAINER */
+      .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+      }
+      
+      /* ================= NAVBAR (TEAM STYLE) ================= */
+      .navbar-custom {
+        background: linear-gradient(90deg, #1e3c72, #2a5298);
+        padding: 15px 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+      
+      .nav-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .logo {
+        color: white;
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+      
+      .logo span {
+        color: #ffd9a0;
+      }
+      
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+      }
+      
+      .nav-links a {
+        color: #e0e6f0;
+        text-decoration: none;
+        position: relative;
+        transition: 0.3s;
+      }
+      
+      .nav-links a:hover {
+        color: #fff;
+        transform: translateY(-2px);
+      }
+      
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0%;
+        height: 2px;
+        background: white;
+        transition: 0.3s;
+      }
+      
+      .nav-links a:hover::after,
+      .nav-links .active::after {
+        width: 100%;
+      }
+      
+      .nav-links .active {
+        color: #fff;
+      }
+      
+      /* ================= HERO ================= */
+      .hero {
+        background: linear-gradient(rgba(31, 42, 68, 0.8), rgba(31, 42, 68, 0.8)),
+        url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
+        color: white;
+        text-align: center;
+        padding: 80px 20px;
+      }
+      
+      .hero h2 {
+        font-size: 36px;
+        margin-bottom: 15px;
+      }
+      
+      .hero p {
+        font-size: 18px;
+        max-width: 700px;
+        margin: auto;
+      }
+      
+      /* ================= FILTER ================= */
+      .filter-section {
+        padding: 30px 0;
+        background-color: white;
+      }
+      
+      .filter-box {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      .filter-box input,
+      .filter-box select {
+        padding: 12px;
+        width: 260px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+      
+      /* ================= COURSES ================= */
+      .courses-section {
+        padding: 50px 0;
+      }
+      
+      .courses-section h3 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 30px;
+      }
+      
+      .courses-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+      }
+      
+      .course-card {
+        background-color: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        transition: 0.3s;
+      }
+      
+      .course-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+      }
+      
+      .course-card h4 {
+        margin-bottom: 10px;
+        color: #1f2a44;
+      }
+      
+      .level {
+        font-weight: bold;
+        color: #2a5298;
+        margin-bottom: 10px;
+      }
+      
+      .course-card button {
+        background-color: #1e3c72;
+        color: white;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      
+      .course-card button:hover {
+        background-color: #2a5298;
+      }
+      
+      .no-results {
+        text-align: center;
+        margin-top: 20px;
+        color: red;
+        display: none;
+      }
+      
+      /* ================= CTA ================= */
+      .cta {
+        background-color: #1f2a44;
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+      }
+      
+      .cta h3 {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+      
+      .cta-btn {
+        display: inline-block;
+        background-color: white;
+        color: #1f2a44;
+        padding: 12px 24px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      
+      /* FOOTER */
+.footer {
+  background: #111827;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+      
+      /* ================= RESPONSIVE ================= */
+      @media (max-width: 768px) {
+        .nav-container {
+          flex-direction: column;
+          gap: 10px;
+        }
+      
+        .nav-links {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      
+        .hero h2 {
+          font-size: 28px;
+        }
+      }
+      
+      </style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
